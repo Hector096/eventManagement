@@ -1,0 +1,12 @@
+
+    <title>Reset</title>
+    <div class='container'>
+        <div class="main">
+          <p class="sign" >Reset Password</p>
+          <form class="form1" [formGroup]='loginform' (ngSubmit)="login()">
+            <input  [class.un1]="loginform.get('username').invalid && loginform.get('username').touched" class="un " formControlName='username' type="text" placeholder="Username/email">
+            <!-- <input  [class.un1]="loginform.get('password').invalid && loginform.get('password').touched" class="un " formControlName='password' type="password"  placeholder="Password"> -->
+            <button [disabled]="!loginform.valid"  class="submit"> Reset </button>
+            </form>
+          </div>             
+          </div>

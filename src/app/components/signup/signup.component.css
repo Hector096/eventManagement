@@ -1,0 +1,136 @@
+.container{
+    display: flex;
+    flex-direction: row;
+      /* background-color: teal; */
+    
+}
+.error{
+    color: white;
+    text-align: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(7, 7, 7);
+    width: 600px;
+    height: 430px;
+    margin: 3em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    height: 10px;
+    color: rgb(254, 254, 255);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center
+    
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center 
+}
+
+.un {
+    
+width: 100%;
+color: rgb(14, 74, 104);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(10, 8, 8, 0.04);
+padding: 10px;
+margin: 10px;
+align-items: center;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(240, 238, 238, 0.884);
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus {
+    border: 2px solid rgba(241, 239, 239, 0.18) !important;
+    
+}
+.box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.d-none{
+    display: none;
+}
+.text-danger{
+    color: red;
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background:black;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    margin-top:5px ;
+    margin-left: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+.submit:hover{
+    color:rgb(124, 116, 116)
+}
+
+.un1 {
+    width: 100%;
+    color: rgb(252, 250, 251);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgb(238, 29, 29);
+    margin:10px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+.forgot {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding:15px;
+    cursor: pointer;
+}
+.forget:hover{
+    color: grey;
+}
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: rgb(244, 238, 245);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin: auto;
+    
+}

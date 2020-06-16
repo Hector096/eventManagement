@@ -1,0 +1,32 @@
+<title>Sign in</title>
+<div class='container'>
+  <div class="main">
+    <p class="sign">Sign in</p>
+<div class='form1'>
+      {{loginForm.value |json}}
+  <form [formGroup]="loginForm" (ngSubmit)="login()" class='form1' >
+    <div class='box'>
+      <input [class.un1]="eMail.invalid && eMail.touched" class='un' type="text"formControlName="email" placeholder="email" />
+      <div *ngIf="eMail.invalid && eMail.touched" >
+      <small *ngIf="eMail.errors?.required" class='text-danger'>email is required</small>
+    </div>
+  </div>
+      
+      <div class='box'>
+        <input [class.un1]="passWord.invalid &&passWord.touched" class='un' type="password" formControlName='password' placeholder="password">
+        <div *ngIf="passWord.invalid && passWord.touched">
+        <small *ngIf="passWord.errors?.required" class='text-danger'>password is required</small>
+        </div>  
+      </div>
+      
+      <button [disabled]="!loginForm.valid" class="submit" > Login </button>
+      
+      <div class='button'>
+        <a routerLink='/signup' class="forget" type='submit'>Not User? Signup!</a>
+        <a routerLink='/forget' class="forget" type='submit'>forget?</a>
+        
+      </div>
+    </form>
+  </div>
+  </div>
+</div>

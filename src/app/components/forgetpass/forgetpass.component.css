@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    flex-direction: row;
+      /* background-color: teal; */
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(7, 7, 7);
+    width: 600px;
+    height: 430px;
+    margin: 3em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding: 10px;
+    height: 0px;
+    color: rgb(254, 254, 255);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center
+    
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center 
+}
+
+.un {
+    
+width: 76%;
+color: rgb(14, 74, 104);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(10, 8, 8, 0.04);
+padding: 20px;
+margin: 10px;
+align-items: center;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(240, 238, 238, 0.884);
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.un:focus {
+    border: 2px solid rgba(241, 239, 239, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background:black;
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+.submit:hover{
+    color:rgb(124, 116, 116)
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin: auto;
+    
+    
+}

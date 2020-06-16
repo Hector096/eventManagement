@@ -1,0 +1,30 @@
+<title>Dashboard</title>
+<div class='container'>
+  <div class="main">
+    <p class="sign">Add New Task</p>
+    <form class="form1" [formGroup]='addtask' (ngSubmit)="login()">
+      <input [class.un1]="loginform.get('username').invalid && loginform.get('username').touched" class="un "
+        formControlName='task' type="text" placeholder="Task">
+      <input [class.un1]="loginform.get('password').invalid && loginform.get('password').touched" class="un "
+        formControlName='password' type="date" placeholder="">
+      <select class='select'>
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="shopping">Shopping</option>
+        <option value="others">Others</option>
+      </select>
+
+      <button [disabled]="!loginform.valid" class="submit"> Add </button>
+    </form>
+  </div>
+
+  <div id="pending" class="main">
+    <p class="sign">Your Pending Tasks</p>
+<div class="card">
+  <h4></h4>
+  
+</div>
+  </div>
+  
+
+</div>

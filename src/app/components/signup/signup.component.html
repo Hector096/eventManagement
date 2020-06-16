@@ -1,0 +1,60 @@
+<title>Sign Up</title>
+<div class="container">
+  <div class="main">
+    <p class="sign">Sign Up</p>
+
+    <div class="error" *ngIf= "errorMsg">
+    {{errorMsg}}
+
+    </div>
+    <div class="error" *ngIf= "successMsg">
+      {{successMsg}}
+    </div>
+   
+    <form class="form1"  [formGroup]='signupform' (ngSubmit)="signup()" >
+
+      <div class='box'>
+        <input [class.un1]="naMe.invalid && naMe.touched" class='un' type="text" formControlName="name"
+          placeholder="Full name" />
+        <div *ngIf="naMe.invalid && naMe.touched">
+          <small *ngIf="naMe.errors?.required" class='text-danger'>name is required</small>
+
+        </div>
+      </div>
+
+      <div class='box'>
+        <input [class.un1]="eMail.invalid && eMail.touched" class='un' type="text" formControlName='email'
+          placeholder="Email">
+        <div *ngIf="eMail.invalid && eMail.touched">
+          <small *ngIf="eMail.errors?.required" class='text-danger'>email is required</small>
+          <small *ngIf="eMail.errors?.email" class='text-danger'>email is not valid</small>
+        </div>
+      </div>
+
+      <div class='box'>
+        <input [class.un1]="passWord.invalid && passWord.touched" class='un' type="password" formControlName='password'
+          placeholder="Password">
+        <div *ngIf="passWord.invalid && passWord.touched">
+          <small *ngIf="passWord.errors?.required" class='text-danger'>password is required</small>
+          <small *ngIf="passWord.errors?.minlength " class='text-danger'>password must of 4 character</small>
+          <small *ngIf="passWord.errors?.maxlength " class='text-danger'>password must not be more-than 12
+            character</small>
+        </div>
+      </div>
+
+
+
+      <div class='box'>
+        <input [class.un1]="signupform.errors?.misMatch" class='un' type="password" formControlName='password2'
+          placeholder="Confirm Password">
+        <small *ngIf="signupform.errors?.misMatch" class='text-danger'>Passwords do not Match </small>
+      </div>
+
+      <div>
+        <button [disabled]="!signupform.valid" class="submit" type="submit" (click)="signup()"> SignUp </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
